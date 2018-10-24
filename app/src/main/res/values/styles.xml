@@ -13,12 +13,18 @@
     <item name="windowNoTitle">true</item>
   </style>
 
-  <style name="pick_item">
-
-  </style>
-
   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
   <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="PickNumber" parent="AppTheme">
+    <item name="android:textSize">21sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="SupplementaryPickNumber" parent="PickNumber">
+    <item name="android:textStyle">italic</item>
+    <item name="android:textColor">@color/bonus_item</item>
+  </style>
 
 </resources>
