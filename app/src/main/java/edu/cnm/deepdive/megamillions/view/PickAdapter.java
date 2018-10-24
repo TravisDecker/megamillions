@@ -37,8 +37,8 @@ public class PickAdapter extends RecyclerView.Adapter<PickAdapter.Holder> {
 
   @Override
   public void onBindViewHolder(@NonNull Holder holder, int position) {
-    holder.bind(); // TODO Pass current PickWithNumbers instance.
-    // TODO Note that ternary (or if-else) is needed to deal with re-bound holders.
+    holder.bind();
+    // Note that ternary (or if-else) is needed to deal with re-bound holders.
     int background = (position % 2 == 0)
         ? ContextCompat.getColor(context, R.color.pickBackground)
         : ContextCompat.getColor(context, R.color.pickBackgroundAlternate);
@@ -73,7 +73,6 @@ public class PickAdapter extends RecyclerView.Adapter<PickAdapter.Holder> {
     }
 
     private void bind() {
-      // TODO Use PickWithNumbers instance.
       pick = picks.get(getAdapterPosition());
       List<PickNumber> numbers = pick.getNumbers();
       int index = 0;
